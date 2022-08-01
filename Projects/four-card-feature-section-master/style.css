@@ -10,7 +10,6 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    width: 1440px;
     height: 100%;
     margin: auto;  
    background-color: hsl(0, 0%, 98%);
@@ -53,7 +52,6 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    flex: 1;
 }
 
 /* -------------LEFT COLUMN */
@@ -155,11 +153,82 @@ footer{
 
 
 /* ------------------------------------------------------------------MOBILE DESIGN */
+@media screen and (max-width: 940px){
+    /* -----------------------TOP CONTAINER 940PX */
 
-@media screen and (max-width: 475px){
+    .top-container {
+        padding: 0;
+        width: 95%;
+    }
+
+    .top-container p {
+        padding: 0 4rem;
+    }
+
+    /* ---------------------------------BOTTOM CONTAINER 940PX */
+
+
+    .bottom-container {
+        padding-top: 4rem;
+
+    }
+
+    .left-col {
+        align-items: center;
+        width: 100%;
+    
+    }
+    .mid-col{
+        gap: 2rem;
+        width: 100%;
+    
+    }
+
+    .right-col {
+        width: 100%;
+        align-items: center;
+    
+    }
+    
+
+     .card {            
+        width: 90%;     
+     }
+}        
+    
+
+@media screen and (max-width: 524px){
+
+    /* ------------ TOP CONTAINER 524px */
+
+    .top-container {
+         width: 95%;       
+        padding: 6rem 0.9rem 0;       
+    }
+
+      
+    h1, h2{
+        font-size: 1.6rem;        
+    } 
+    
+    .top-container p {
+        margin-top: 1rem;  
+        padding: 0;
+    }
+
+
+    /* -------------------BOTTOM CONTAINER 524px */
     .bottom-container {
         flex-direction: column;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+    
 }        
     
